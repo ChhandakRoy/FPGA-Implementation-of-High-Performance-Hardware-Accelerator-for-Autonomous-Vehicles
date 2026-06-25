@@ -31,7 +31,7 @@ coverage collection, and a self-checking scoreboard.
 
 ## Testbench Architecture
 
-![TB Architecture](docs/tb_architecture.png)
+![TB Architecture](testbench environment/ALU_testbench_environemnt.png)
 
 | Component | Role |
 |-----------|------|
@@ -46,7 +46,7 @@ coverage collection, and a self-checking scoreboard.
 
 ## Simulation Results
 
-![Waveform](results/waveform_screenshot.png)
+![Waveform](results/sim_waveform.png)
 
 **Scoreboard Summary:**
 - ADD transactions: X
