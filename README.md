@@ -239,33 +239,6 @@ Waveform captures for each pipeline stage:
 - Vivado 2024.2
 - Xilinx Virtex-7 VC707 board (or target a compatible 7-series device)
 
-### Steps
-
-1. Clone the repository:
-```bash
-git clone https://github.com/ChhandakRoy/CTP_FPGA_Accelerator.git
-cd CTP_FPGA_Accelerator
-```
-
-2. Open Vivado 2024.2 → Create new project → select **Virtex-7 xc7vx485tffg1761-2**
-
-3. Add all RTL sources:
-   - Add `rtl/*.v` as Design Sources
-   - Add `tb/ctp_tb.v` as Simulation Source
-   - Add `bram/*.coe` files to respective BRAM IP instances
-
-4. Add constraints:
-   - Add `constraints/vc707.xdc`
-
-5. Run simulation via TCL Console:
-```tcl
-source sim/run_sim.tcl
-```
-
-6. For synthesis and implementation:
-   - Flow → Run Synthesis → Run Implementation → Generate Bitstream
-
----
 
 ## Skills Demonstrated
 
