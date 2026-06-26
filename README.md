@@ -1,9 +1,11 @@
-# CTP Module — FPGA Hardware Accelerator
-### Contextual Transformation Pooling for Real-Time Semantic Segmentation
+# FPGA-based Hardware Accelerator of CTP Module for Autonomous Vehicles
+### Complementary Twin Pyramidal Module for Real-Time Semantic Segmentation
 
 ![Platform](https://img.shields.io/badge/Platform-Xilinx%20Virtex--7%20VC707-red)
 ![Language](https://img.shields.io/badge/HDL-Verilog-blue)
 ![Tool](https://img.shields.io/badge/Tool-Vivado%202024.2-orange)
+![Parameters](https://img.shields.io/badge/Parameters-0.03%20M-pink)
+![FLOPs](https://img.shields.io/badge/FLOPs-167M%20FLOPs-yellow)
 ![FPS](https://img.shields.io/badge/Frame%20Rate-774%20FPS-brightgreen)
 ![Frequency](https://img.shields.io/badge/Frequency-166%20MHz-green)
 ![Power](https://img.shields.io/badge/Power-0.77%20W-yellow)
@@ -13,8 +15,8 @@
 
 ## Overview
 
-This repository presents the **FPGA hardware acceleration** of the Contextual
-Transformation Pooling (CTP) module — a lightweight multi-scale context
+This repository presents the **FPGA hardware acceleration** of the 
+Complementary Twin Pyramidal (CTP) module — a lightweight multi-scale context
 aggregation block originally proposed as part of **CTPNet**, a real-time
 semantic segmentation architecture for autonomous/driverless vehicle perception.
 
