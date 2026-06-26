@@ -286,7 +286,7 @@ source sim/run_sim.tcl
 M.Tech VLSI & Nanoelectronics, IIT Guwahati (2024–2026)
 GATE 2024 AIR 256
 
-[LinkedIn](https://https://www.linkedin.com/in/chhandak-roy-profile) | [GitHub](https://github.com/ChhandakRoy)
+[LinkedIn](https://https://www.linkedin.com/in/chhandak-roy-profile/) | [GitHub](https://github.com/ChhandakRoy)
 
 ---
 
