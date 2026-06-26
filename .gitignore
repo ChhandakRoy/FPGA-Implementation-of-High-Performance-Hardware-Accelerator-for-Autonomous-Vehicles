@@ -1,13 +1,58 @@
+# ============================================================
+# Vivado Generated Files — DO NOT PUSH
+# ============================================================
+
+# Project files (binary)
 *.xpr
 *.bit
-*.jou
-*.log
-*.str
+*.ltx
+*.mmi
+
+# Generated run directories
 *.runs/
 *.sim/
 *.cache/
 *.hw/
 *.ip_user_files/
 *.gen/
+*.hbs/
+
+# Log and journal files
+*.jou
+*.log
+*.str
+*.pb
+
+# Vivado backup files
+*.bak
+
+# Constraints — keep only handwritten XDC
+# (remove this line if you want to push all XDC)
+# *.xdc
+
+# ============================================================
+# OS Files
+# ============================================================
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# ============================================================
+# Editor Files
+# ============================================================
+.vscode/
+*.swp
+*~
+
+# ============================================================
+# What IS pushed (for reference)
+# rtl/*.v          — all handwritten RTL
+# tb/*.v           — testbench
+# bram/*.coe       — BRAM initialization files
+# sim/*.tcl        — simulation scripts
+# sim/results/*.png — waveform screenshots
+# docs/*.png       — architecture diagrams
+# constraints/*.xdc — timing constraints
+# README.md
+# LICENSE
+# ============================================================
