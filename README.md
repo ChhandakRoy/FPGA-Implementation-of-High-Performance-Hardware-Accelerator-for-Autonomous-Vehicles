@@ -239,6 +239,39 @@ Waveform captures for each pipeline stage:
 - Vivado 2024.2
 - Xilinx Virtex-7 VC707 board (or target a compatible 7-series device)
 
+## How to Reproduce
+
+### Prerequisites
+- Vivado 2024.2
+- Xilinx Virtex-7 VC707 board (or target a compatible 7-series device)
+
+### Steps
+
+1. Clone the repository:
+```bash
+git clone https://github.com/ChhandakRoy/FPGA-Implementation-of-High-Performance-Hardware-Accelerator-for-Autonomous-Vehicles.git
+cd FPGA-Implementation-of-High-Performance-Hardware-Accelerator-for-Autonomous-Vehicles
+```
+
+2. Open Vivado 2024.2 → Create new project → select **Virtex-7 xc7vx485tffg1761-2**
+
+3. Add all RTL sources:
+   - Add `rtl/CTP.v` as Design Sources
+   - Add `testbench/ctp_tb.v` as Simulation Source
+   - Add `bram` files to respective BRAM IP instances
+
+4. Add constraints:
+   - Add `constraints/vc707.xdc`
+
+5. Run simulation via TCL Console:
+```tcl
+source sim/run_sim.tcl
+```
+
+6. For synthesis and implementation:
+   - Flow → Run Synthesis → Run Implementation → Generate Bitstream
+
+---
 
 ## Skills Demonstrated
 
@@ -259,7 +292,7 @@ Waveform captures for each pipeline stage:
 M.Tech VLSI & Nanoelectronics, IIT Guwahati (2024–2026)
 GATE 2024 AIR 256
 
-[LinkedIn](https://https://www.linkedin.com/in/chhandak-roy-profile/) | [GitHub](https://github.com/ChhandakRoy)
+[LinkedIn](https://www.linkedin.com/in/chhandak-roy-profile/) | [GitHub](https://github.com/ChhandakRoy)
 
 ---
 
