@@ -124,13 +124,13 @@ The CTP module performs **dual-branch multi-scale contextual aggregation**:
   │           Pixels fetched from BRAM1, 2 rows + 2 kernels/clk    │
   └─────────────────────────────────────────────────────────────────┘
 
+
+
+```
 ![Stage 1 Architecture](docs/stage1.png)
 ![Stage 2 Architecture](docs/stage2.png)
 ![Stage 3 Architecture](docs/stage3.png)
 ![Stage 4 Architecture](docs/stage4.png)
-
-
-```
 
 
 
