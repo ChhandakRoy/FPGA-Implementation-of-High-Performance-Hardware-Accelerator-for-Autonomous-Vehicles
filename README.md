@@ -127,10 +127,19 @@ The CTP module performs **dual-branch multi-scale contextual aggregation**:
 
 
 ```
-![Stage 1 Architecture](docs/stage1.png)
-![Stage 2 Architecture](docs/stage2.png)
-![Stage 3 Architecture](docs/stage3.png)
-![Stage 4 Architecture](docs/stage4.png)
+### Pipeline Stage Architecture Diagrams
+
+<table>
+  <tr>
+    <td align="center"><b>Stage 1 — PW Conv (1/4) Channel Squeezer</b><br/><img src="docs/stage1.png" alt="Stage 1 Architecture" width="420"/></td>
+    <td align="center"><b>Stage 2 — DwDConv (r=6,12) + GAP / AP 16×16</b><br/><img src="docs/stage2.png" alt="Stage 2 Architecture" width="420"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Stage 3 — DwDConv (r=18,36) + AP 8×8 / 4×4</b><br/><img src="docs/stage3.png" alt="Stage 3 Architecture" width="420"/></td>
+    <td align="center"><b>Stage 4 — PW Conv (1/2) Final Channel Projection</b><br/><img src="docs/stage4.png" alt="Stage 4 Architecture" width="420"/></td>
+  </tr>
+</table>
+
 
 
 
