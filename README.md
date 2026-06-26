@@ -159,13 +159,11 @@ The CTP module performs **dual-branch multi-scale contextual aggregation**:
 
 | Module               | Description |
 |----------------------|-------------|
-| `ctp_top.v`          | Top-level integration of all 4 stages; orchestrates inter-stage control |
-| `hybrid_mac.v`       | Computes dot product of 9 pixels × 9 weights; includes BN + ReLU; produces 1 output pixel/clk |
-| `bilinear_interp.v`  | 7-cycle latency; takes 4 input pixels → 1 output pixel; 6 adders + 3 multipliers |
-| `adder_tree.v`       | Accumulates 16 pixels for average pooling; 4-stage pipelined reduction |
-| `latency_tracker.v`  | Parameterizable N-stage shift register; propagates `valid_in` → `valid_out` after exactly N cycles; zero logic overhead |
-| `bram_tdp.v`         | True dual-port BRAM wrapper; 1 BRAM word = 1 full image row (N × 8-bit pixels packed) |
-| `pwconv_engine.v`    | 5-stage pipelined pointwise convolution; fetches 2 rows + 2 kernels/clk from BRAM1 |
+| `CTP.v`          | Top-level integration of all 4 stages; orchestrates inter-stage control |
+| `Hybrid_MAC.v`       | Computes dot product of 9 pixels × 9 weights; includes BN + ReLU; produces 1 output pixel/clk |
+| `Bilinear_Interpolation.v`  | 7-cycle latency; takes 4 input pixels → 1 output pixel; 6 adders + 3 multipliers |
+| `ADDER_16pix.v`       | Accumulates 16 pixels for average pooling; 4-stage pipelined reduction |
+| `Latency_tracker.v`  | Parameterizable N-stage shift register; propagates `valid_in` → `valid_out` after exactly N cycles; zero logic overhead |
 
 ---
 
